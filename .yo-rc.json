@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "spfx-recoil",
+    "libraryId": "b702f7d1-71ba-453c-aefc-b6d9f329fc40",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-recoil",
+    "solutionShortDescription": "spfx-recoil description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

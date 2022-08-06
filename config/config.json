@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "recoil-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/recoilDemo/RecoilDemoWebPart.js",
+          "manifest": "./src/webparts/recoilDemo/RecoilDemoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "RecoilDemoWebPartStrings": "lib/webparts/recoilDemo/loc/{locale}.js"
+  }
+}
