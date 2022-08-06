@@ -2,13 +2,12 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Demo for using Recoil JS in SPFx React projects
 
-[picture of the solution in action, if possible]
 
 ## Used SharePoint Framework Version
 
-![version](https://img.shields.io/badge/version-1.13-green.svg)
+![version](https://img.shields.io/badge/version-1.15-green.svg)
 
 ## Applies to
 
@@ -19,20 +18,19 @@ Short summary on functionality and used technologies.
 
 ## Prerequisites
 
-> Any special pre-requisites?
+> Recoil JS (npm install recoil)
 
 ## Solution
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| spfx-recoil | Vijay Natrajan |
 
 ## Version history
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| 1.0.0   | Aug 6, 2021      | Initial Release |
 
 ## Disclaimer
 
@@ -52,22 +50,24 @@ Short summary on functionality and used technologies.
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+This is a small spfx-webpart used to test out Recoil JS atoms and selectors.
 
-This extension illustrates the following concepts:
+This WebPart illustrates the following concepts:
 
-- topic 1
-- topic 2
-- topic 3
+- Using recoiljs atom 
+- Using recoiljs selector
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+> Atoms storing global state are found in GlobalState.ts under src/components. It also has a selector called
+> farenTemp that automatically converts temp atom value in Celcius to equivalent Farentheit value
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+> React component called Celcius allows user to type a number in Celcius. It then stores this value in a 
+> global atom called temp
+
+> React component called Farenheit which uses the tempFaren selector and display the resulting value
+
+> Both Ceclius and Farenheit compnents are used in RecoilDemo.tsx
 
 ## References
 
 - [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+- [Getting started with Recoil JS (Official Documentation)](https://recoiljs.org/docs/introduction/getting-started)
