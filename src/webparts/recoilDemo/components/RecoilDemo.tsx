@@ -3,7 +3,7 @@ import styles from './RecoilDemo.module.scss';
 import { IRecoilDemoProps } from './IRecoilDemoProps';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-import { RecoilRoot, useRecoilState } from 'recoil';
+import { RecoilRoot } from 'recoil';
 import Celcius from './Celcius';
 import Farenheit from './Farenheit';
 
